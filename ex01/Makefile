@@ -1,9 +1,9 @@
 NAME = Animal
 
 CXX = c++ -std=c++98
-CXXFLAG = -Wall -Wextra -Werror
+CXXFLAG = -Wall -Wextra -Werror -fsanitize=address
 
-SRC = main.cpp Animal.cpp Cat.cpp Dog.cpp WrongAnimal.cpp WrongCat.cpp
+SRC = main.cpp Animal.cpp Cat.cpp Dog.cpp WrongAnimal.cpp WrongCat.cpp Brain.cpp
 
 all : $(NAME)
 

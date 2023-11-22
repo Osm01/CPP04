@@ -5,16 +5,17 @@
 #ifndef CPP04_DOG_H
 # define CPP04_DOG_H
 
-#include "Animal.h"
-
+# include "Animal.h"
+# include "Brain.h"
 
 class Dog : public Animal{
+private:
+	Brain	*brain;
 public:
 	Dog();
 	Dog(const Dog &other);
 	Dog		&operator=(const Dog &other);
 	void	makeSound(void) const;
-	void	test(void);
 	~Dog();
 };
 
