@@ -29,6 +29,7 @@ void Dog::makeSound() const
 	std::cout << CYAN << "Woof sound" << RESET << std::endl;
 }
 
+
 Dog::~Dog()
 {
 	delete brain;

@@ -30,11 +30,6 @@ std::string	Animal::getType(void) const
 	return (this->type);
 }
 
-void Animal::makeSound() const
-{
-	std::cout << CYAN << "Animal sound" << RESET << std::endl;
-}
-
 Animal::~Animal()
 {
 	std::cout << RED << "Calling destructor of Animal" << RESET << std::endl;

@@ -6,7 +6,7 @@ Animal::Animal() : type("Animal")
 	std::cout << GREEN << "Calling default constructor of Animal" << RESET << std::endl;
 }
 
-Animal::Animal(std::string type) : type(type)
+Animal::Animal(const std::string &type) : type(type)
 {
 	std::cout << BLUE <<  "Calling parameter constructor of Animal" << RESET << std::endl;
 }
