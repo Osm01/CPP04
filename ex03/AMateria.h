@@ -12,10 +12,11 @@
 # define RESET "\033[0m"
 
 class ICharacter;
+class AMateria;
 
 typedef struct t_node
 {
-	void	*data;
+	AMateria	*data;
 	struct t_node	*next;
 }	s_node;
 
@@ -36,7 +37,7 @@ public:
 	virtual				~AMateria();
 };
 
-s_node	*add_node(void *data);
+s_node	*add_node(AMateria *data);
 s_node	*last_node(s_node *head);
 void	add_back_node(s_node **head, s_node *node);
 

@@ -41,7 +41,7 @@ AMateria::~AMateria()
 	std::cout << RED << "Calling destructor of AMateria" <<  RESET << std::endl;
 }
 
-s_node	*add_node(void *data)
+s_node	*add_node(AMateria *data)
 {
 	s_node *new_node = new s_node();
 	if (!new_node)

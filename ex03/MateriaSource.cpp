@@ -34,6 +34,7 @@ MateriaSource &MateriaSource::operator=(const MateriaSource &other){
 
 void MateriaSource::learnMateria(AMateria *materia)
 {
+	add_back_node(&node, add_node(materia));
 	int i = 0;
 	while (i < 4)
 	{
@@ -61,12 +62,5 @@ AMateria *MateriaSource::createMateria(const std::string &type)
 
 MateriaSource::~MateriaSource()
 {
-	int i = 0;
-	while (i < 4)
-	{
-		if (matirias[i])
-			delete matirias[i];
-		i ++;
-	}
 	std::cout << RED << "Calling destructor of MateriaSource" <<  RESET << std::endl;
 }

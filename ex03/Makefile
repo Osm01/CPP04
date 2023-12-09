@@ -2,7 +2,7 @@
 NAME = main
 
 CXX = c++ -std=c++98
-CXXFLAGS = -Wall -Wextra -Werror -fsanitize=address
+CXXFLAGS = -Wall -Wextra -Werror #-fsanitize=address -g3
 
 SRC = main.cpp AMateria.cpp Character.cpp Cure.cpp Ice.cpp MateriaSource.cpp
 

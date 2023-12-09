@@ -37,10 +37,7 @@ Character &Character::operator=(const Character &other){
 		int i = 0;
 		while (i < 4)
 		{
-			if (this->slots[i])
-				add_back_node(&node, add_node(this->slots[i]));
-			this->slots[i] = NULL;
-			i ++;
+			this->slots[i++] = NULL;
 		}
 		i = 0;
 		while (i < 4)
@@ -87,7 +84,6 @@ void Character::unequip(int idx)
 	{
 		if (slots[idx])
 		{
-			add_back_node(&node, add_node(slots[idx]));
 			slots[idx] = NULL;
 			std::cout << GREEN << "Unequiped succesfully" << RESET << std::endl;
 		}
